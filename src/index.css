@@ -1,0 +1,157 @@
+/* index.css */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #4a90e2;
+}
+
+h2 {
+  color: #333;
+  margin-top: 40px;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #357ab7;
+}
+
+button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #4a90e2;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+button {
+  background-color: #e74c3c;
+  padding: 8px 15px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+/* Layout Adjustments for Small Screens */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Responsive Table Adjustments */
+@media (max-width: 600px) {
+  table {
+    font-size: 0.85rem;
+    margin-top: 20px;
+  }
+
+  td {
+    word-wrap: break-word;
+  }
+
+  /* Stack the form elements vertically on small screens */
+  form {
+    width: 100%;
+    padding: 15px;
+  }
+}
